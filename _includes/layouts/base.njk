@@ -33,6 +33,41 @@
 		<style>{% getBundle "css" %}</style>
 		{#- Renders the CSS bundle using a separate file, if you can't set CSP directive style-src: 'unsafe-inline' #}
 		{#- <link rel="stylesheet" href="{% getBundleFileUrl "css" %}"> #}
+<style>
+	.netlify-identity-user-details {
+							display: block;
+						}
+
+						.netlify-identity-user {
+							font-weight: 500;
+							color: #2d3b41;
+							display: block;
+							margin-top: 8px;
+						}
+
+						.hands-on-area {
+							display: flex;
+							margin-bottom: 40px;
+						}
+
+						.single-button {
+							flex-grow: 1;
+							margin-right: 104px;
+							margin-bottom: 40px;
+						}
+
+						.multiple-buttons {
+							flex-grow: 2;
+						}
+
+						.single-button div {
+							margin-top: 8px;
+						}
+
+						.multiple-buttons div {
+							margin-top: 8px;
+						}
+</style>
 	</head>
 	<body>
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
@@ -44,6 +79,11 @@
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
         <div data-netlify-identity-menu></div>
+<div class="hands-on-area"
+				<div class="multiple-buttons">
+				<div data-netlify-identity-menu></div>
+				</div>
+</div>
 				<ul class="nav">
 				{%- for entry in collections.all | eleventyNavigation %}
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
@@ -61,3 +101,7 @@
 		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
 	</body>
 </html>
+
+
+
+
