@@ -1,7 +1,7 @@
 {
-	"name": "eleventy-base-blog",
+	"name": "xbr",
 	"version": "8.0.0",
-	"description": "A starter repository for a blog web site using the Eleventy site generator.",
+	"description": "Te ayudo hacer tu pagina web",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
 		"build-ghpages": "npx @11ty/eleventy --pathprefix=/eleventy-base-blog/",
@@ -15,22 +15,22 @@
 		"url": "git://github.com/11ty/eleventy-base-blog.git"
 	},
 	"author": {
-		"name": "Zach Leatherman",
-		"email": "zachleatherman@gmail.com",
-		"url": "https://zachleat.com/"
+		"name": "Luis Angel Maciel",
+		"email": "angel.luis@my.com",
+		"url": "https://luisangelmaciel.github.io/"
 	},
 	"license": "MIT",
 	"engines": {
 		"node": ">=14"
 	},
 	"funding": {
-		"type": "opencollective",
-		"url": "https://opencollective.com/11ty"
+		"type": "xbr.pw",
+		"url": "https://www.xbr.pw"
 	},
 	"bugs": {
-		"url": "https://github.com/11ty/eleventy-base-blog/issues"
+		"url": "https://github.com/xbrpw/eleventy-base-blog/issues"
 	},
-	"homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+	"homepage": "https://github.com/xbrpw/eleventy-base-blog/#README.md",
 	"devDependencies": {
 		"@11ty/eleventy": "^2.0.1",
 		"@11ty/eleventy-img": "^3.1.0",
