@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 
@@ -42,6 +43,7 @@
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
+        <div data-netlify-identity-menu></div>
 				<ul class="nav">
 				{%- for entry in collections.all | eleventyNavigation %}
 					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
