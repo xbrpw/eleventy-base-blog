@@ -1,11 +1,11 @@
 module.exports = {
-	title: "Eleventy Base Blog v8",
-	url: "https://example.com/",
-	language: "en",
-	description: "I am writing about my experiences as a naval navel-gazer.",
+	title: "Te ayudo hacer tu pagina web",
+	url: "https://contratar-la-creacion-de-pagina-web.netlify.app/",
+	language: "es-MX",
+	description: "Te ayudo hacer tu pagina web",
 	author: {
-		name: "Your Name Here",
-		email: "youremailaddress@example.com",
-		url: "https://example.com/about-me/"
+		name: "Luis Angel Maciel",
+		email: "angel.luis@my.com",
+		url: "https://www.xbr.pw/author/luisangelmaciel.html"
 	}
 }
