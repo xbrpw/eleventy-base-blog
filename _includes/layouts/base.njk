@@ -78,15 +78,15 @@
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
-        <div data-netlify-identity-menu></div>
-<div class="hands-on-area"
-				<div class="multiple-buttons">
-				<div data-netlify-identity-menu></div>
-				</div>
-</div>
+      
+
+				
+
 				<ul class="nav">
 				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
+					<li class="nav-item">
+               <a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a> &nbsp; <div data-netlify-identity-menu></div>
+          </li>
 				{%- endfor %}
 				</ul>
 			</nav>
